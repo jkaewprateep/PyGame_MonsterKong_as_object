@@ -79,3 +79,47 @@ def read_current_state( string_gamestate ):
 
     return None
  ```
+ 
+ ```
+game_console = MonsterKong_Game()
+p = PLE(game_console, fps=30, display_screen=True, reward_values={})
+p.init()
+
+obs = p.getScreenRGB()
+```
+
+```
+for i in range(nb_frames):
+    steps = steps + 1
+	
+    if p.game_over():
+        p.reset_game()
+        steps = 0
+        lives = 0
+        reward = 0
+        scores = 0
+		
+    if ( steps == 1 ):
+        print('start ... ')
+
+        action = K_a
+
+	reward = p.act(action)
+	obs = p.getScreenRGB()
+	
+	scores = scores + reward
+	
+	############################################################################
+	print( "score: " + str( read_current_state("score") ) )
+	print( "game_over: " + str( read_current_state("game_over") ) )
+	print( "fireballGroup: " + str( read_current_state("fireballGroup") ) )
+	print( "coinGroup: " + str( read_current_state("coinGroup") ) )
+	print( "player: " + str( read_current_state("player") ) )
+	print( "monster: " + str( read_current_state("monster") ) )
+	print( "lives: " + str( read_current_state("lives") ) )
+	print( "allies: " + str( read_current_state("allies") ) )
+	print( "ladder: " + str( read_current_state("ladder") ) )
+	print( "wall: " + str( read_current_state("wall") ) )
+	############################################################################
+	
+```
