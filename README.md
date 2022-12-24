@@ -1,6 +1,8 @@
 # PyGame_MonsterKong_as_object
 For working and study with PyGame Monster Kong game
 
+## Game input libraries ##
+
 ```
 import ple
 from ple import PLE
@@ -14,6 +16,7 @@ from ple.games.monsterkong.monsterPerson import MonsterPerson as MonsterPerson_G
 from pygame.constants import K_a, K_s, K_d, K_w, K_h, K_SPACE
 ```
 
+## Game output axises ##
 
 ```
 def read_current_state( string_gamestate ):
@@ -78,15 +81,19 @@ def read_current_state( string_gamestate ):
         return None
 
     return None
- ```
+```
  
- ```
+## Game Environment ## 
+ 
+```
 game_console = MonsterKong_Game()
 p = PLE(game_console, fps=30, display_screen=True, reward_values={})
 p.init()
 
 obs = p.getScreenRGB()
 ```
+
+## Game test running ## 
 
 ```
 for i in range(nb_frames):
