@@ -109,25 +109,25 @@ for i in range(nb_frames):
     if ( steps == 1 ):
         print('start ... ')
 
-        action = K_a
+    action = K_a
 
-	reward = p.act(action)
-	obs = p.getScreenRGB()
+    reward = p.act(action)
+    obs = p.getScreenRGB()
 	
-	scores = scores + reward
+    scores = scores + reward
 	
-	############################################################################
-	print( "score: " + str( read_current_state("score") ) )
-	print( "game_over: " + str( read_current_state("game_over") ) )
-	print( "fireballGroup: " + str( read_current_state("fireballGroup") ) )
-	print( "coinGroup: " + str( read_current_state("coinGroup") ) )
-	print( "player: " + str( read_current_state("player") ) )
-	print( "monster: " + str( read_current_state("monster") ) )
-	print( "lives: " + str( read_current_state("lives") ) )
-	print( "allies: " + str( read_current_state("allies") ) )
-	print( "ladder: " + str( read_current_state("ladder") ) )
-	print( "wall: " + str( read_current_state("wall") ) )
-	############################################################################
+    ############################################################################
+    print( "score: " + str( read_current_state("score") ) )
+    print( "game_over: " + str( read_current_state("game_over") ) )
+    print( "fireballGroup: " + str( read_current_state("fireballGroup") ) )
+    print( "coinGroup: " + str( read_current_state("coinGroup") ) )
+    print( "player: " + str( read_current_state("player") ) )
+    print( "monster: " + str( read_current_state("monster") ) )
+    print( "lives: " + str( read_current_state("lives") ) )
+    print( "allies: " + str( read_current_state("allies") ) )
+    print( "ladder: " + str( read_current_state("ladder") ) )
+    print( "wall: " + str( read_current_state("wall") ) )
+    ############################################################################
 	
 ```
 
