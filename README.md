@@ -123,3 +123,12 @@ for i in range(nb_frames):
 	############################################################################
 	
 ```
+
+## Result image ##
+
+#### Game play ####
+![Alt text](https://github.com/jkaewprateep/PyGame_MonsterKong_as_object/blob/main/124.png?raw=true "Title")
+
+#### Output result for our study ####
+![Alt text](https://github.com/jkaewprateep/PyGame_MonsterKong_as_object/blob/main/125.png?raw=true "Title")
+
