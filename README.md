@@ -2,6 +2,19 @@
 
 For working and study with PyGame Monster Kong game, it required to access object like variables in the games by this method, class access from initail class as Python programming like.
 
+## Key constants ##
+
+from pygame.constants import K_a, K_s, K_d, K_w, K_h, K_SPACE
+
+| Key Press  | value as Int | Description |
+| ------------- | ------------- | ------------- |
+| K_a  | 97  | Left, press Key a |
+| K_s  | 115  | down, press Key s  |
+| K_d  | 100  | right, press Key d  |
+| K_w  | 119  | up, press Key w  |
+| K_h  | 104  | hold, press Key h  |
+| K_SPACE  | 32  | actions, press Key SPACE  |
+
 ## Access primary object like in Monster Kong games ##
 
 Start from initial class ```__init__.py``` the board class ```board.py``` in stored values we need and it is the connector to other class in the game environment, Monster Kong games.
