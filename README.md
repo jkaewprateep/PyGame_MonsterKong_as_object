@@ -54,6 +54,8 @@ from pygame.constants import K_a, K_s, K_d, K_w, K_h, K_SPACE
 
 ## Game output axises ##
 
+The game current versions does not included getState() as other sample games, we use it for extracting games variables and objects from ```Pygame``` and ```Spikes objects``` we ```created read_current_state()```.
+
 ```
 def read_current_state( string_gamestate ):
 		
