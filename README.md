@@ -135,6 +135,8 @@ obs = p.getScreenRGB()
 
 ## Game test running ## 
 
+Game test running with prepared ```prediction()``` method,  model training ```model.fit()``` and games return variables to ```DATA``` training with ```LABEL```, create a dataset and update method ```update_DATA( )``` with your logical requirements for the games.
+
 ```
 for i in range(nb_frames):
     steps = steps + 1
@@ -155,6 +157,8 @@ for i in range(nb_frames):
     obs = p.getScreenRGB()
 	
     scores = scores + reward
+    
+    DATA, LABEL, steps = update_DATA( action )
 	
     ############################################################################
     print( "score: " + str( read_current_state("score") ) )
