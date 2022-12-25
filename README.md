@@ -188,11 +188,27 @@ for i in range(nb_frames):
 	
 ```
 
+## Files and Directory ##
+
+| Key Press  | Description |
+| ------------- | ------------- |
+| sample.py  | sample codes file.  |
+| 124.png | sample gameplay screenshot. |
+| 125.png  | sample gameplay player and objects value screenshot. |
+| MonsterKong.gif | sample gameplay screenshot. |
+| README.md  | readme file. |
+
 ## Result image ##
 
 #### Game play ####
-![Alt text](https://github.com/jkaewprateep/PyGame_MonsterKong_as_object/blob/main/124.png?raw=true "Title")
+
+Sample play game with included play method, prediction and training.
+
+![Alt text](https://github.com/jkaewprateep/PyGame_MonsterKong_as_object/blob/main/MonsterKong.gif?raw=true "Title")
 
 #### Output result for our study ####
+
+Sample output form games, see the ```read_current_state()``` method.
+
 ![Alt text](https://github.com/jkaewprateep/PyGame_MonsterKong_as_object/blob/main/125.png?raw=true "Title")
 
