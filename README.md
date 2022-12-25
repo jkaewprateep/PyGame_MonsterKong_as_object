@@ -37,6 +37,8 @@ game_console.getScore()
 
 ## Game input libraries ##
 
+We import the Python Leanring Environment and inherit calsses objects for specific object properties such as position, values and group from provided methods ```__init__```, ```object like class```, main enter ```board class```, ```shared method``` and ```game constants```.
+
 ```
 import ple
 from ple import PLE
