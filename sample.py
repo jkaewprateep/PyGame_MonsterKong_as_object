@@ -348,7 +348,7 @@ model = tf.keras.models.Sequential([
 		
 model.add(tf.keras.layers.Flatten())
 model.add(tf.keras.layers.Dense(192))
-model.add(tf.keras.layers.Dense(2))
+model.add(tf.keras.layers.Dense(6))
 model.summary()
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""
