@@ -388,7 +388,6 @@ model.save_weights(checkpoint_path)
 : Tasks
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""
 for i in range(nb_frames):
-	steps = steps + 1
 	
 	if p.game_over():
 		p.reset_game()
