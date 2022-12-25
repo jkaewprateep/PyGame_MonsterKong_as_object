@@ -123,6 +123,8 @@ def read_current_state( string_gamestate ):
  
 ## Game Environment ## 
  
+Create object from class like method and initail it values and sample return of the screen observing screen colors mapped arrays.
+ 
 ```
 game_console = MonsterKong_Game()
 p = PLE(game_console, fps=30, display_screen=True, reward_values={})
