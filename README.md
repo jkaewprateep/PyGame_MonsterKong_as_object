@@ -1,5 +1,39 @@
 # PyGame_MonsterKong_as_object
-For working and study with PyGame Monster Kong game
+
+For working and study with PyGame Monster Kong game, it required to access object like variables in the games by this method, class access from initail class as Python programming like.
+
+## Access primary object like in Monster Kong games ##
+
+Start from initial class ```__init__.py``` the board class ```board.py``` in stored values we need and it is the connector to other class in the game environment, Monster Kong games.
+
+1. Direct access to the object class as they created class like python programming scripts file.
+2. Access from the ```board``` class.
+3. Access from shared method from ```__init__```
+4. Access from MonsterKong_Game class we initail for screen and spikes objects.
+
+```
+from ple import PLE
+
+from ple.games.monsterkong import MonsterKong as MonsterKong_Game
+from ple.games import base
+
+from ple.games.monsterkong.person import Person as Person_Game
+from ple.games.monsterkong.player import Player as Player_Game
+from ple.games.monsterkong.monsterPerson import MonsterPerson as MonsterPerson_Game
+
+game_console = MonsterKong_Game()
+p = PLE(game_console, fps=30, display_screen=True, reward_values={})
+p.init()
+
+for player in game_console.newGame.Players :
+    ...
+for Enemies in MonsterPerson_Game :
+    ...
+for Allies in game_console.newGame.Allies :
+    ...
+game_console.getScore()
+    ...
+```
 
 ## Game input libraries ##
 
